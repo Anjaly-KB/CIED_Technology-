@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion Result</title>
+</head>
+<body>
+    <h1>Conversion Result</h1>
+    <p>{{ amount }} {{ from_currency }} = {{ converted_amount }} {{ to_currency }}</p>
+    <p>Exchange Rate: {{ exchange_rate }}</p>
+    <a href="{% url 'index' %}">Convert Again</a>
+</body>
+</html>

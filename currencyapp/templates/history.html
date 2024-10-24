@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion History</title>
+</head>
+<body>
+    <h1>Conversion History</h1>
+    <ul>
+        {% for record in history %}
+            <li>{{ record.timestamp }}: {{ record.amount }} {{ record.from_currency }} to {{ record.to_currency }} = {{ record.converted_amount }} (Rate: {{ record.conversion_rate }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">Back</a>
+</body>
+</html>
